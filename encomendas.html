@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <title>Le Vin Syrah</title>
+</head>
+<body>
+  
+    <section>
+
+        <header>
+            <img src="img/banner.png" alt="banner contendo uma imagem ilustrativa de duas taças de vinho" width="100%" height="100%" />
+        </header>
+
+        <nav>
+            <ul>
+                <li><a class="a-menu" href="index.html">HOME</a></li>
+                <li><a class="a-menu" href="sobre.html">SOBRE</a></li>
+                <li><a class="a-menu" href="produtos.html">PRODUTOS</a>
+                <li><a class="a-menu" href="#">ENCOMENDAS</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div id="encomendas">
+                <h1>Encomendas</h1>
+                
+                    <p>Faça sua encomenda aqui preenchendo o seguinte formulário:</p>
+
+            <div>
+                <form>
+                <label for="nome">Nome:</label><br />
+                <input id="nome" type="text" name="nome_completo" size="60" placeholder="Digite seu nome completo" required autofocus /> <br /><br />
+                
+                <label for="email" color="#000000" >E-mail:</label> <br />
+                <input id="email" type="email" name="email" size="60" placeholder="nome@email.com" required /> <br /><br />
+
+                <label for="sugestao">Produto:</label> <br />
+                    <select id="sugestao" name="sugestao" required>
+                        <option value="">Selecione</option>
+                        <option value="tinto">Vinho Tinto</option>
+                        <option value="branco">Vinho Branco</option>
+                        <option value="rose">Vinho Rosé</option>
+                        <option value="suco">Suco Integral</option>
+                    </select> 
+                
+
+                <div id=quantidade>
+                    <label for="aval">Quantidade:</label> <br />
+                    <input id="aval" type="number" name="aval" min="1" max="1000" step="1" required />
+                </div>
+                
+                <fieldset>
+                    
+                    <legend>Forma de Envio:</legend>
+                    <input id="comum" type="radio" name="envio" value="comum" required /> <label for="comum">Envio Comum</label> <br />
+                    
+                    <input id="expresso" type="radio" name="envio" value="expresso" /> <label for="expresso">Envio Expresso</label>
+                    <br />
+
+                    <input id="loja" type="radio" name="envio" value="loja" /> <label for="loja">Retirar no local</label>
+
+                </fieldset>
+
+                <label for="msg">Comentários:</label> <br />
+                <textarea id="msg" cols="60" rows="10"></textarea>
+
+                <div id="botoes-form">
+                    <input type="submit" name="btn-pedido" value="Concluir Pedido" />
+                    <input type="reset" name="btn-cancelar" value="Cancelar" />
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p>Desenvolvido por <a class="a-footer" href="https://www.instagram.com/" target="_blank">Bernardo Borges e         Fernando Martinhago</a> - 2021</p>
+        </footer>
+
+    </section> 
+
+</body>
+</html>
